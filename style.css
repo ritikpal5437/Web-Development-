@@ -1,3 +1,11 @@
-style {
+body {
     background-color: blanchedalmond;
+}
+a {
+    color: rgb(203, 107, 107);
+    text-decoration: underline;
+}
+p {
+    font-size: 16px;
+    color: rgb(36, 91, 201);
 }
