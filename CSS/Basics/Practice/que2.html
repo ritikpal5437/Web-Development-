@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Practise</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .card {
+            width: 250px;
+
+            border: 4px solid black;
+            background: lightgreen;
+            text-align: center;
+            margin: 40px auto;
+            padding: 20px;
+            box-shadow: 5px 5px 10px gray;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: blue;
+            font-size: 28px;
+        }
+
+        p {
+            color: gray;
+            margin: 15px 0;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+
+        }
+
+        button:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2> CSS Box Model</h2>
+        <p> Lear CSS Easily</p>
+        <button>Start Learning</button>
+    </div>
+
+</body>
+
+</html>
