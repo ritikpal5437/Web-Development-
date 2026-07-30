@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            width: 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            gap: 20px
+
+        }
+        .cards{
+            height: 100%;
+            background-color: rgb(235, 117, 6);
+          
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class ="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+
+    </div> -->
+    <div class="container">
+    
+        <div class="cards" ><h1>Product</h1>
+        <p>$499</p>
+        <button>Buy</button>
+        </div>
+         <div class="cards" ><h1>Product</h1>
+        <p>$699</p>
+        <button>Buy</button>
+        </div>
+         <div class="cards" ><h1>Product</h1>
+        <p>$999</p>
+        <button>Buy</button>
+        </div>
+         <div class="cards" ><h1>Product</h1>
+        <p>$799</p>
+        <button>Buy</button>
+        </div>
+         <div class="cards" ><h1>Product</h1>
+        <p>$599</p>
+        <button>Buy</button>
+        </div>
+         <div class="cards" ><h1>Product</h1>
+        <p>$899</p>
+        <button>Buy</button>
+        </div>
+        
+    </div>
+    </div>
+</body>
+</html>
