@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+       .container{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: auto 250px auto;
+    gap: 15px;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.header{
+    grid-column: span 3;
+    background: orange;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar{
+    grid-row: span 2;
+    background: lightblue;
+    padding: 20px;
+}
+
+.content{
+    grid-column: span 2;
+    background: lightgreen;
+    padding: 20px;
+}
+
+.footer{
+    grid-column: span 2;
+    background: gray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class ="container">
+        
+            <div class="header">Header</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+            <div class="footer">Footer</div>
+        
+    </div>
+    
+</body>
+</html>

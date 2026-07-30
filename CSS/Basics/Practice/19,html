@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            width: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border: 3px solid black  ;
+            gap: 15px;
+        }
+        .box{
+            height: 200;
+            background-color: rgb(235, 117, 6);
+          
+            flex-direction: column;
+           display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.box5{
+    grid-column: span 2;
+}
+.box2{
+    grid-row: span 3;
+    
+}
+    </style>
+</head>
+<body>
+        <div class ="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box box5">5</div>
+        <div class="box ">6</div>
+         <div class="box ">7</div>
+          <div class="box ">8</div>
+           <div class="box ">9</div>
+        </div>
+</body>
+</html>
