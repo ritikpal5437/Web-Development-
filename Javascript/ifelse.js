@@ -8,3 +8,4 @@ else if (n<0){
 else{
     console.log("n is zero");
 }
+    
