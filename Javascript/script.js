@@ -10,3 +10,7 @@ console.log(para[0]);
 console.log(para[1]);
 
 para[0].innerText = "First Paragraph";
+
+let h2 = document.getElementsByTagName("h2");
+
+console.log(h2);
