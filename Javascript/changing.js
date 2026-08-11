@@ -14,6 +14,8 @@
 let title = document.getElementById("title");
 let para = document.getElementById("para");
 
+let box = document.getElementById("box");
 
+console.log(box.textContent);
 console.log(title.outerHTML);
 console.log(para.tagName);
