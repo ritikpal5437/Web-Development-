@@ -8,3 +8,6 @@ parent.addEventListener("click", function() {
 child.addEventListener("click", function() {
     console.log("Child clicked");
 }); 
+setTimeout(function() {
+    console.log("Hello");
+}, 3000);
