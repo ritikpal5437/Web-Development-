@@ -9,6 +9,6 @@ btn.addEventListener("dblclick",function(e) {
 let input = document.getElementById("name");
 
 input.addEventListener("keydown",function(e) {
-    console.log("Key Down");
+    console.log("Key pressed", e.key);
 }   )
 ;
