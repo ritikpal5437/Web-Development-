@@ -1,4 +1,7 @@
 let a =prompt  ("enter 1 no.")
 let b =prompt ("enter 2 no.")
-let sum = parseInt(a)+parseInt(b)
-console.log("sum is",sum)
+try{let sum = parseInt(a)+parseInt(b)
+
+} catch(error) {
+    console.error("An error occurred:", error);
+}console.log("sum is",sum)
