@@ -1,6 +1,6 @@
 class Animal{
     constructor(name){
-        this.name;
+        this.name=name;
     }
     speak(){
         console.log("Animal makes a sound");
