@@ -21,3 +21,4 @@ function showname() {
 
 // showname();
 console.log(globalName);
+
