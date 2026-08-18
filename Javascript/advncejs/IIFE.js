@@ -7,3 +7,8 @@
 (function () {
     console.log("Hello Javascript");
 })();
+
+
+(function (name) {
+    console.log("Hello " + name);
+})("Ritik");
