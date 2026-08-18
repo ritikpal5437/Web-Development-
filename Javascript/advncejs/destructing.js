@@ -31,4 +31,6 @@ let student = {
 
 let { name: studentname, age: studentage, course: studentcourse } = student;
 
-console.log(student);
+console.log(studentname);
+console.log(studentage);
+console.log(studentcourse);
