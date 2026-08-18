@@ -12,3 +12,13 @@ let vegetables = ["Potato", "Tomato"];
 
 let food = [...fruits1,...vegetables];
 console.log(food);
+
+
+// spread object
+
+let student={
+    name: "ritik",
+    age:21
+};
+let students2={...student}
+console.log(students2);
