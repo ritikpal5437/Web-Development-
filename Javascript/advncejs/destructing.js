@@ -18,3 +18,17 @@ console.log(a);
 console.log(b);
 console.log(c);
 
+
+
+// object destructing start from here
+
+
+let student = {
+    name: "Ritik",
+    age: 21,
+    course: "MCA"
+};
+
+let { name: studentname, age: studentage, course: studentcourse } = student;
+
+console.log(student);
