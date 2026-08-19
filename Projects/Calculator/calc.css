@@ -41,7 +41,7 @@ body {
     border: 2px solid black;
     font-size: 1.5rem;
     cursor: pointer;
-     gap: 10px;
+    gap: 10px;
 }
  .btn{
     width: 100%;
