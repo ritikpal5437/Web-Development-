@@ -2,21 +2,26 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+   
 }
-
-
-
+body{
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .todo-container{
+ display: flex;
+ flex-direction: column;
+     background-color: antiquewhite;
     width: 100%;
      max-width: 500px;
       box-sizing: border-box;
-    align-items: center;
-    margin: 20px;
     padding:24px;
     border: 2px solid black;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(red, green, blue)
- 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
 }
 .todo-container h1{
     text-align: center;
@@ -25,13 +30,16 @@
 .task-input{
     display: flex;
     gap: 15px;
+   width: 100%;
+    
 }
 .task-input input{
+    background-color: azure;
     flex: 1;
-    /* padding: 10px; */
-       padding: auto;
+    padding: 10px; 
     border: 2px solid black;
     border-radius: 15px;
+    
 }
 
 .task-input button{
@@ -39,20 +47,46 @@
     padding: 10px;
     background-color: rgb(43, 180, 157);
     color: aliceblue;
-    z-index: 15px;
-      border: 2px solid black;
+    border: 2px solid black;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.5s;
 }
 .task-input button:hover{
     background-color: #e3400f;
-    transform: scale(1.o5);
+    transform: scale(1.05);
 }
  .task-list{
-    margin: 20px;
-    padding: 20px;
+    width: 100%;
     margin-top: 0%;
+    
  }
+.task{
+display: flex;
+ text-align: center;
+padding: 15px;
+border: 2px solid black;
+border-radius: 2px;
+gap: 15px;
+margin-bottom: 10px;
 
+}
+
+
+.delete-btn{
+     width: 80px;
+    padding: 10px;
+    background-color: rgb(252, 252, 137);
+    color: rgb(47, 123, 189);
+      border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+.delete-btn:hover{
+        background-color: #7dc315;
+    transform: scale(1.05);
+}
  
