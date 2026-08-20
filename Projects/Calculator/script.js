@@ -19,6 +19,8 @@ button.forEach(function (btn) {
     if (display.innerText.includes(".")) {
         return;
     }
+    display.innerText += value;
+}
 
 }
         else if (value === "=") {
@@ -45,10 +47,10 @@ button.forEach(function (btn) {
                     break;
 
                 case "/":
-                    case "/":
+                    
 
     if (num2 === 0) {
-        display.innerText="error";
+        display.innerText="infinity";
     } else {
         result = num1 / num2;
     }
@@ -72,6 +74,7 @@ break;
             else {
                 display.innerText += value;
             }}
+            
      });
 
 });
