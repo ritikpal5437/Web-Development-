@@ -14,12 +14,17 @@ button.forEach(function (btn) {
             display.innerText = "";
 
         }
-        else if (value === ".") {
+else if (value === ".") {
 
     if (display.innerText.includes(".")) {
         return;
     }
-    display.innerText += value;
+
+    if (display.innerText === "0") {
+        display.innerText = "0.";
+    } else {
+        display.innerText += ".";
+    
 }
 
 }
@@ -50,7 +55,7 @@ button.forEach(function (btn) {
                     
 
     if (num2 === 0) {
-        display.innerText="infinity";
+        display.innerText="Error";
     } else {
         result = num1 / num2;
     }
