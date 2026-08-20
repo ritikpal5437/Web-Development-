@@ -10,3 +10,14 @@
     border: 2px solid white;
     border-radius:50%;
 }
+#date{
+  width: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius:50px;
+}
