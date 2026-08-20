@@ -1,52 +1,69 @@
-let display = document.getElementById('display');
-let button = document.querySelectorAll('.btn');
+let display = document.getElementById("display");
+let button = document.querySelectorAll(".btn");
 
-button.forEach(function(btn){
-    btn.addEventListener('click',function(){
-        let value = btn.dataset.value;
-        if(display.innerText==="0"){
-            display.innerText=value;
-        }
-        else{
-        display.innerText=display.innerText+value;
-        }
 let firstNumber = "";
 let operator = "";
 
-if (value === "+" || value === "-" || value === "*" || value === "/") {
+button.forEach(function (btn) {
+     btn.addEventListener("click", function () {
+           let value = btn.dataset.value;
+        if (value === "+" || value === "-" || value === "*" || value === "/") {
 
-    firstNumber =display.innerText;
-    operator = value ;
-    display.innerText = "";
+            firstNumber = display.innerText;
+            operator = value;
+            display.innerText = "";
+
+        }
+        else if (value === ".") {
+
+    if (display.innerText.includes(".")) {
+        return;
+    }
 
 }
-if(value==="="){
-    let secondNumber=display.innerText;
+        else if (value === "=") {
 
+            let secondNumber = display.innerText;
 
+            let num1 = Number(firstNumber);
+            let num2 = Number(secondNumber);
 
-let num1 = Number(firstNumber);
-let num2 = Number(secondNumber);
-let result;
-switch(operator){
-    case "+":
-        result= num1+num2;
-        break;
+            let result;
 
-    case "-":
-        result= num1-num2;
-        break;
+            switch (operator) {
 
-    case "*":
-        result= num1*num2;
-        break;
+                case "+":
+                    result = num1 + num2;
+                    break;
 
-        case "/":
-        result= num1/num2;
-        break;
-}
-display.innerText=result;
-}
-    })
+                case "-":
+                    result = num1 - num2;
+                    break;
+
+                case "*":
+                    result = num1 * num2;
+                    break;
+
+                case "/":
+                    result = num1 / num2;
+                    break;
+            }
+
+            display.innerText = result;
+        }
+        else if (value === "C") {
+
+            display.innerText = "0";
+            firstNumber = "";
+            operator = "";}
+        else {
+               if (display.innerText === "0") {
+                display.innerText = value;
+            }
+
+            else {
+                display.innerText += value;
+            }}
+     });
+
 });
-
