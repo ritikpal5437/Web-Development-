@@ -26,7 +26,6 @@ else if (value === ".") {
         display.innerText += ".";
     
 }
-
 }
         else if (value === "=") {
 
