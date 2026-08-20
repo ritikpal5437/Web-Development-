@@ -45,8 +45,16 @@ button.forEach(function (btn) {
                     break;
 
                 case "/":
-                    result = num1 / num2;
-                    break;
+                    case "/":
+
+    if (num2 === 0) {
+        display.innerText="error";
+    } else {
+        result = num1 / num2;
+    }
+
+break;
+                    
             }
 
             display.innerText = result;
