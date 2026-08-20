@@ -10,9 +10,6 @@ button.forEach(function(btn){
         else{
         display.innerText=display.innerText+value;
         }
-    })
-});
-
 let firstNumber = "";
 let operator = "";
 
@@ -50,3 +47,6 @@ switch(operator){
 }
 display.innerText=result;
 }
+    })
+});
+
