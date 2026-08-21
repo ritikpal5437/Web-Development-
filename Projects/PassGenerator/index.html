@@ -4,22 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main"><H2>Password Generator</H2></div>
+    <div id="main"><H2>Password Generator</H2>
     <div id="pass">
-        <button>
-        <div class="btn">password</div>
-        <div class="btn">Copy</div>
-</button>
+        <div class="password-box">
+            <span id="password">Password</span>
+            <button id="copybtn">Copy</button>
+        </div>
     </div>
-    <div id="length">Length : </div>
+    <div id="length">  <label for="lengthRange">Length: <span id="lengthValue">12</span></label>
+        <input type="range" id="lengthRange" min="4" max="30" value="12">
+    </div>
+
     <div class="container">
-        <input type="checkbox" name="" id="Uppercase">
-        <input type="checkbox" name="" id="Lowercase">
-        <input type="checkbox" name="" id="Numbers">
-        <input type="checkbox" name="" id="Symbols">
+        <label>
+            <input type="checkbox" id="uppercase">
+            Uppercase
+        </label>
+
+        <label>
+            <input type="checkbox" id="lowercase">
+            Lowercase
+        </label>
+
+        <label>
+            <input type="checkbox" id="numbers">
+            Numbers
+        </label>
+
+        <label>
+            <input type="checkbox" id="symbols">
+            Symbols
+        </label>
+
     </div>
+
+    <button id="generateBtn">Generate Password</button>
     </div>
+    <script src="script.js"></script>
+
 </body>
 </html>
