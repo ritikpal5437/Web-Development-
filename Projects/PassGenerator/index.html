@@ -7,43 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main"><H2>Password Generator</H2>
-    <div id="pass">
+
+    <div id="main">
+
+        <h2>Password Generator</h2>
+
         <div class="password-box">
             <span id="password">Password</span>
-            <button id="copybtn">Copy</button>
+            <button id="copyBtn">Copy</button>
         </div>
+
+        <div id="length">
+            <label for="lengthRange">
+                Length: <span id="lengthValue">12</span>
+            </label>
+
+            <input type="range" id="lengthRange" min="4" max="30" value="12">
+        </div>
+
+        <div class="container">
+
+            <label>
+                <input type="checkbox" id="uppercase">
+                Uppercase
+            </label>
+
+            <label>
+                <input type="checkbox" id="lowercase">
+                Lowercase
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers">
+                Numbers
+            </label>
+
+            <label>
+                <input type="checkbox" id="symbols">
+                Symbols
+            </label>
+
+        </div>
+
+        <button id="generateBtn">Generate Password</button>
+
     </div>
-    <div id="length">  <label for="lengthRange">Length: <span id="lengthValue">12</span></label>
-        <input type="range" id="lengthRange" min="4" max="30" value="12">
-    </div>
-
-    <div class="container">
-        <label>
-            <input type="checkbox" id="uppercase">
-            Uppercase
-        </label>
-
-        <label>
-            <input type="checkbox" id="lowercase">
-            Lowercase
-        </label>
-
-        <label>
-            <input type="checkbox" id="numbers">
-            Numbers
-        </label>
-
-        <label>
-            <input type="checkbox" id="symbols">
-            Symbols
-        </label>
-
-    </div>
-
-    <button id="generateBtn">Generate Password</button>
-    </div>
-    <script src="script.js"></script>
 
 </body>
 </html>
