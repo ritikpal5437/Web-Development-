@@ -1,6 +1,10 @@
 let button = document.querySelector("button");
 let notesContainer = document.querySelector(".notes-container");
 
+function saveNotes(){
+    localStorage.setItem("notes",notesContainer.innerHTML);
+}
+
 button.addEventListener("click", function () {
 
     let note = document.createElement("p");
@@ -15,5 +19,23 @@ button.addEventListener("click", function () {
 
     deleteBtn.addEventListener("click", function () {
         note.remove();
+        saveNotes();
     });
+    note.addEventListener("click",function () {
+        saveNotes();
+
+        
+    });
+
+    saveNotes();
+});
+notesContainer.innerHTML = localStorage.getItem("notes") || "";
+
+document.querySelectorAll(".input-box span").forEach(function (deleteBtn) {
+
+    deleteBtn.addEventListener("click", function () {
+        deleteBtn.parentElement.remove();
+        saveNotes();
+    });
+
 });
