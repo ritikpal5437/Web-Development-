@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    padding: 4%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(1deg, #cf9acf , #95c0ff);
+    color: azure;
+
+}.container h1{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.container button{
+ display: flex;
+    align-items: center;
+     background: linear-gradient(1deg, #9418fd , #571094);
+    color: #fff;
+    border: 0;
+    border-radius: 40px;
+    padding: 10px 5px;
+    /* margin: 20px 0; */
+    cursor: pointer
+    ;
+
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
