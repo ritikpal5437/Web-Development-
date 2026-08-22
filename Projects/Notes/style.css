@@ -41,3 +41,14 @@
     margin: 20px 0;
     border-radius: 5px;
 }
+.input-box {
+    position: relative;
+}
+
+.input-box span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
