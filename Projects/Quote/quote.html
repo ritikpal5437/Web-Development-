@@ -9,11 +9,11 @@
 <body>
     <div class="quote-box">
         <h1>--Quote of the Day--</h1>
-       <blockquote id="quote">loading...</blockquote>
-        <span id="author">loading...</span>
+       <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
         <div>
-            <button>New Quote</button>
-            <button>Tweet</button>
+            <button onclick=" getquote(api_url);">New Quote</button>
+            <button onclick="tweet()">Tweet</button>
         </div>
     </div>
     <script >
@@ -24,12 +24,16 @@
             const response = await fetch(url);
             var data = await response.json();
             // console.log(data);
-            quote.innerHTML=data.content;
+            quote.innerHTML=data.quote;
             author.innerHTML=data.author;
 
             
         }
         getquote(api_url);
+        function tweet() {
+            const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(quote.innerText + " " + author.innerText)}`;
+            window.open(tweetUrl, "Tweet Window", "width=600,height=400");
+        }
     </script>
 </body>
 </html>
