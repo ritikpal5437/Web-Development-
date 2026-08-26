@@ -6,6 +6,7 @@
     min-height: 100vh;
     width: 100%;
     display: flex;
+    font-size: larger;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -28,7 +29,7 @@ resize: none;
 outline: none;
 font-size: 15px;
 margin-top: 30px;
-margin-bottom: 30px;
+margin-bottom: 20px;
      border-radius: 20px;
 }
 textarea::placeholder{
@@ -37,7 +38,7 @@ textarea::placeholder{
 }
 .row{
     width: 600px;
-    display: inline;
+    display: flex;
     align-items: center;
     gap: 20px;
 
@@ -54,8 +55,8 @@ textarea::placeholder{
 }
 select{
 flex: 1;
-    color: #fff;
-    background: 403d84;
+    color: #1e0202;
+    background: #b2aed6;
     height: 40px;
       /* font-size: 16px; */
     padding: 0 20px;
@@ -63,6 +64,6 @@ flex: 1;
     border-radius: 35px;
     outline: 0;
     appearance: none;
-    
+
     
 }
