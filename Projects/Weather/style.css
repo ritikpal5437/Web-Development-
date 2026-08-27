@@ -1,0 +1,8 @@
+body{
+    background: #222;
+}
+.nav{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(123deg ,rgb(45, 11, 196) , rgb(151, 15, 97));
+}
