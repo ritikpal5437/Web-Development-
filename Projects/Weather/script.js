@@ -4,8 +4,7 @@ const weatherBox = document.getElementById("weatherBox");
 
 async function checkWeather(city) {
     if (!city) return;
-
-    try {
+try {
         const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1&language=en&format=json`;
         const geoResponse = await fetch(geoUrl);
         const geoData = await geoResponse.json();
